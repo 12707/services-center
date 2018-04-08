@@ -1,13 +1,15 @@
 spring:
   application:
-    name: configService
+    name: sampleService
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/wuxiaoxin730/cloud
+      uri: http://localhost:8888
+    bus:
+      trace:
+        enabled: true
   rabbitmq:
     host: 192.168.31.114
     port: 32769
     username: guest
     password: guest
+#    addresses: 192.168.31.114:32769
